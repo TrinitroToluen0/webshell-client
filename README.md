@@ -24,10 +24,6 @@ formLastHardwareId2=error_reporting(0);@set_time_limit(0);echo"SOWS--";system('t
 
 In this example, the command `system('tree /F C:/xampp/htdocs/web');` is executed, which lists the directory structure. The server will return the output wrapped between `SOWS--` and `--EOWS`, and the client will then parse this response to display the result.
 
-- **SOWS** (Start of WebShell): Marks the start of the shell command's output for easier parsing.
-- **EOWS** (End of WebShell): Marks the end of the output.
-
-The output returned by the server will be wrapped between `SOWS--` and `--EOWS`, allowing the client to interpret the response accurately.
 
 ## Important Disclaimer
 
